@@ -1,1 +1,89 @@
-body{background:red;} div{}
+
+  body {
+      font-family: 'Aspira', sans-serif;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-top: 1em;
+  }
+  input[type=text], input[type=password], input[type=search], input[type=email], input[type=tel], input[type=url], textarea, select {
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #333;
+    padding: 1em;
+    width: 100%;
+  }
+  input[type=text]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=url]::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: #757575;
+  }
+  input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type=search]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, input[type=url]:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+    color: #757575;
+  }
+  input[type=text]::placeholder, input[type=password]::placeholder, input[type=search]::placeholder, input[type=email]::placeholder, input[type=tel]::placeholder, input[type=url]::placeholder, textarea::placeholder, select::placeholder {
+    color: #757575;
+  }
+  .hpsNameLabel__req {
+    color: #d71920;
+  }
+
+  #hpsNumberRow {
+      float: none;
+      margin: 0;
+      display: block;
+  }
+
+  a:link, a:visited {
+      color: #0072ba;
+  }
+
+  #theForm {
+      width: auto;
+  }
+
+  #hpsAmountLabel, #amountDisplay {
+      display: none;
+  }
+
+  #hpsZipLabel:after {
+      content:'Zip Code'
+  }
+
+ #stateText {
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+  }
+  
+ #stateText::after {
+    content: "State";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+  }
+
+  #completeButton {
+    cursor: default;
+    background: #3b7d1a;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1em;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s, color 0.1s, filter 0.15s;
+    width: 100%;
+    margin: 1em 0;
+  }
+  #completeButton:hover {
+      background: #529c2d;
+  }
